@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    background-color: #232222 !important;
+    color: #cfcfcf !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background: linear-gradient(90deg, #F04D22, #F04D22, orange, yellow); /* Naranja */
+    color: black;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos de los botones */
+  .btn {
+    border-radius: 50px; /* Cambiar la forma de los botones a redondeada */
+  }
+  
+  .btn-primary {
+    background-color: #FF4E00; /* Rojo */
+    border-color: #FF4E00; /* Rojo */
+  }
+  
+  .btn-primary:hover {
+    background-color: #FF6A36; /* Rojo más claro al pasar el cursor */
+    border-color: #FF6A36; /* Rojo más claro al pasar el cursor */
+  }
+  
+  /* Estilos de los sections */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Estilos de las tarjetas de instalaciones */
+  .card {
+    transition: transform 0.3s; /* Agregar una transición suave al pasar el cursor sobre las tarjetas */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
+  }
+  
+  .card-title {
+    margin-top: 10px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #F04D22; /* Naranja */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navbar-custom {
+    height: 30px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 30px; /* Ajusta el tamaño de la fuente para el logotipo */
+    padding: 10px 15px; /* Ajusta el espacio interno del logotipo */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-family: : 'Bebas Neue', sans-serif !important;
+    padding: 5px; /* Ajusta el espacio interno de los enlaces de navegación */
+  }
+
+  .collapse .navbar-collapse {
+    color: white;
+  }
+
+  .card-title {
+    color: black;
+    font-weight: bold;
+  }
+
+  .card-text {
+    color: black;
+  }
