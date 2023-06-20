@@ -147,6 +147,12 @@ section h2 {
   background-color: #121212;
 }
 
+.breadcrumb-custom {
+  margin-left: 20px;
+}
+
+
+
 #subirArriba {
   display: none;
   position: fixed;

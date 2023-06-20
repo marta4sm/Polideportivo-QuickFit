@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos y noticias - Polideportivo QuickFit</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="logo.png" alt="Logotipo Polideportivo QuickFit" width="50" height="50" class="d-inline-block align-text-center">
+              Polideportivo QuickFit
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Instalaciones
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="canchas.html">Canchas</a></li>
+                    <li><a class="dropdown-item" href="gimnasio.html">Gimnasio</a></li>
+                    <li><a class="dropdown-item" href="piscinas.html">Piscinas</a></li>
+                    <li><a class="dropdown-item" href="pistas.html">Pistas interiores</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="horarios.html">Horarios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Eventos y Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <label for="search-input" class="visually-hidden">Buscar</label>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-danger" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>    
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-custom">
+            <li class="breadcrumb-item"><a href="inicio.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Eventos y noticias</li>
+        </ol>
+    </nav>
+
+  <main class="container">
+    <h1 class="text-center apartado mt-4">Eventos y noticias</h1>
+
+    <section class="mt-4">
+        <div class="row">
+          <div class="col-md-6 ml-5">
+            <h2 class="text-center">Eventos</h2>
+            <div class="card mb-4">
+              <img src="evento-concierto.png" class="card-img-top" alt="Concierto Quevedo">
+              <div class="card-body">
+                <h5 class="card-title">Concierto de Quevedo</h5>
+                <p class="card-text">El próximo 18 de octubre en el Polideportivo QuickFit</p>
+                <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <img src="futsal.png" class="card-img-top" alt="Pruebas acceso fútbol sala">
+              <div class="card-body">
+                <h5 class="card-title">Pruebas de acceso equipo fútbol sala</h5>
+                <p class="card-text">El 8 de agosto tendrán lugar las pruebas de acceso para el equipo de fútbol sala de La Laguna</p>
+                <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mr-5">
+            <h2 class="text-center">Noticias</h2>
+            <div class="card mb-4">
+              <img src="futsal-victoria.png" class="card-img-top" alt="Victoria fútbol sala">
+              <div class="card-body">
+                <h5 class="card-title">Victoria del equipo de fútbol sala</h5>
+                <p class="card-text">Importante victoria del equipo de futsal que se coloca a 4 puntos del líder</p>
+                <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <img src="piscina-2.png" class="card-img-top" alt="Cierre piscina por mantenimiento">
+              <div class="card-body">
+                <h5 class="card-title">Cierre piscina por mantenimiento</h5>
+                <p class="card-text">La piscina se mantendrá cerrada a los usuarios del 7 al 14 de julio por mantenimento</p>
+                <a href="#" class="btn btn-primary">Más información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+      
+
+    <section class="subirArribaContainer">
+        <button href="#" class="btn btn-secondary btn-lg" id="subirArriba" onclick="scrollToTop()" aria-label="Navegar hacia arriba">Subir Arriba</button>
+        <button type="button" class="btn btn-close" id="cerrarSubirArriba" onclick="closeButton()" aria-label="Cerrar navegación hacia arriba"></button>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+    <a class="text-center footer-link" href="accesibilidad.html">Accesibilidad</a>
+    <a class="text-center ms-3 footer-link" href="mapaweb.html">Mapa web</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scrollUp.js"></script>
+  <script src="focuseable.js"></script>
+</body>
+</html>
