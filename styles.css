@@ -1,116 +1,194 @@
 /* Estilos generales */
 body {
-    background-color: #232222 !important;
-    color: #cfcfcf !important;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilos del encabezado */
-  header {
-    background: linear-gradient(90deg, #F04D22, #F04D22, orange, yellow); /* Naranja */
-    color: black;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Estilos de los botones */
-  .btn {
-    border-radius: 50px; /* Cambiar la forma de los botones a redondeada */
-  }
-  
-  .btn-primary {
-    background-color: #FF4E00; /* Rojo */
-    border-color: #FF4E00; /* Rojo */
-  }
-  
-  .btn-primary:hover {
-    background-color: #FF6A36; /* Rojo más claro al pasar el cursor */
-    border-color: #FF6A36; /* Rojo más claro al pasar el cursor */
-  }
-  
-  /* Estilos de los sections */
-  section {
-    margin-bottom: 40px;
-  }
-  
-  section h2 {
-    margin-top: 0;
-  }
-  
-  /* Estilos de las tarjetas de instalaciones */
-  .card {
-    transition: transform 0.3s; /* Agregar una transición suave al pasar el cursor sobre las tarjetas */
-  }
-  
-  .card:hover {
-    transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
-  }
-  
-  .card-title {
-    margin-top: 10px;
-  }
-  
-  /* Estilos del pie de página */
-  footer {
-    background-color: #F04D22; /* Naranja */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Estilos de la barra de navegación */
-  .navbar-custom {
-    height: 30px;
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 30px; /* Ajusta el tamaño de la fuente para el logotipo */
-    padding: 10px 15px; /* Ajusta el espacio interno del logotipo */
-  }
-  
-  .navbar-nav .nav-link {
-    color: white !important;
-    font-family: : 'Bebas Neue', sans-serif !important;
-    padding: 5px; /* Ajusta el espacio interno de los enlaces de navegación */
-  }
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .collapse .navbar-collapse {
-    color: white;
-  }
 
-  .card-title {
-    color: black;
-    font-weight: bold;
-  }
+/* Estilos de las tarjetas de instalaciones */
+.card {
+  transition: transform 0.3s; /* Agregar una transición suave al pasar el cursor sobre las tarjetas */
+}
 
-  .card-text {
-    color: black;
-  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  background: linear-gradient(90deg, #2b9eff, #007bff, #005cbf, #003d80); /* Azul claro al azul oscuro */
+  color: black;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos de los botones */
+.btn {
+  border-radius: 50px; /* Cambiar la forma de los botones a redondeada */
+}
+
+/* Estilos de los sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+#ExplorarActividades {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card:focus, .card:hover {
+  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
+  box-shadow: 0 0 20px rgba(42, 42, 43, 0.5);
+}
+
+.card-title {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-text {
+  color: black;
+}
+
+/* Estilos del pie de página */
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar-custom {
+  height: 30px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 30px; /* Ajusta el tamaño de la fuente para el logotipo */
+  padding: 10px 15px; /* Ajusta el espacio interno del logotipo */
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  padding: 5px; /* Ajusta el espacio interno de los enlaces de navegación */
+}
+
+/* Estilos generales para los enlaces */
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el enlace activo */
+.nav-link.active {
+  color: #fff;
+  background: #545252; 
+  font-weight: bold;
+}
+
+/* Estilos adicionales para resaltar */
+.nav-link.active {
+  box-shadow: 0 0 10px rgba(42, 42, 43, 0.5);
+  border-radius: 4px;
+}
+
+/* Estilos para la accesibilidad */
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #545252;
+  outline: none;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #121212;
+  outline: none;
+  font-weight: bold;        
+}
+
+.collapse .navbar-collapse {
+  color: white;
+}
+
+.cabecera {
+  color: white;
+  background-color: #121212;
+}
+
+#subirArriba {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#subirArriba:hover {
+  background-color: #333333;
+}
+
+#subirArriba.show {
+  display: block;
+}
+
+#cerrarSubirArriba:hover {
+  background-color: #ff0000;
+}
+
+#cerrarSubirArriba.show {
+  display: block;
+}
+
+#cerrarSubirArriba {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
