@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio - Polideportivo QuickFit</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/inicio.html">
+            <img src="../assets/img/logo.png" alt="Logotipo Polideportivo QuickFit" aria-label="Ir a Página Principal" width="50" height="50" class="d-inline-block align-text-center">
+            Polideportivo QuickFit
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../views/canchas.html">Canchas</a></li>
+                  <li><a class="dropdown-item active" aria-current="page" href="../views/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="../views/piscinas.html">Piscinas</a></li>
+                  <li><a class="dropdown-item" href="../views/pistas.html">Pistas interiores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/eventos&noticias.html">Eventos y Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Entrada de búsqueda">
+              <button class="btn btn-danger" id="search-button" aria-label="Realizar búsqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+  </header>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom mt-3">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="../views/inicio.html" style="font-weight: bold;">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Instalaciones</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Gimnasio</a></li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <section class="text-center my-5">
+      <h1 class="display-4 mt-3 focuseable"><strong>Gimnasio</strong></h1>
+    </section>
+  
+    <!--Slider de fotos del gimansio-->
+    <div class="d-flex justify-content-center">
+    <div id="slideMaquinas" class="carousel slide mb-5 w-50 text-center" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slideMaquinas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slideMaquinas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slideMaquinas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="7000">
+          <img src="../assets/img/gym1.jpeg" class="d-block w-100" alt="Primera imagen del gimnasio">
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="../assets/img/gym2.jpg" class="d-block w-100" alt="Segunda imagen del gimnasio">
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <div class="row">
+            <img src="../assets/img/gym3.png" class="d-block w-100" alt="Tercera imagen del gimnasio">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#slideMaquinas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slideMaquinas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    </div>
+
+  <!-- Acordeón informativo de servicios del gimansio-->
+  <h2 class="mb-5 mt-5 focuseable">Servicios proporcionados</h2>
+  <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button focuseable" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <strong>Instalaciones</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body focuseable">
+          <strong>Máquinas disponibles</strong> <p>Contamos con una amplia gama de máquinas cardiovasculares, como cintas de correr, bicicletas 
+            estáticas, elípticas y máquinas de remo. También contamos con una zona dedicada a las pesas libres, como mancuernas, barras y discos. </p>
+          <strong>Áreas de entrenamiento</strong><p>Área de entrenamiento funcional: Diseñada para actividades de entrenamiento de alta intensidad, 
+            esta área cuenta con cuerdas de batalla, cajas de salto, kettlebells, TRX y otros equipos versátiles para mejorar la fuerza, el equilibrio
+             y la coordinación. </p><p>Área de entrenamiento de peso corporal: Aquí encontrarás barras para dominadas, barras paralelas, anillas y otros 
+             equipos destinados a ejercicios utilizando el peso corporal. Esta área es ideal para fortalecer y tonificar los músculos, así como 
+             mejorar la movilidad y la flexibilidad.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed focuseable" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <strong>Cafetería y nutrición</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body focuseable">
+          <strong>Servicio de Cafetería </strong><p>Desde batidos proteicos y smoothies revitalizantes hasta opciones de comidas ligeras y refrigerios 
+          nutritivos, nuestro menú está diseñado para ayudarte a alcanzar tus metas fitness mientras disfrutas de sabores deliciosos.</p> 
+          <strong>Planes de Alimentación Personalizados</strong><p>Diseñamos planes de alimentación individualizados según tus objetivos, preferencias
+           y necesidades específicas. Estos planes incluyen recomendaciones sobre las cantidades y combinaciones adecuadas de alimentos para ayudarte 
+           a alcanzar tus metas de salud y bienestar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed focuseable" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+         <strong>Vestuarios y aseos</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body focuseable">
+          <strong>Amplios Vestuarios</strong><p>Contamos con amplias áreas de vestuarios equipados con lockers o taquillas para que puedas guardar tus
+           pertenencias de forma segura mientras te ejercitas.</p>
+          <strong>Duchas y Baños</strong><p>Nuestros vestuarios cuentan con duchas y baños limpios y bien mantenidos, para que puedas refrescarte 
+          después de tu entrenamiento y tener una experiencia cómoda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Ubicación -->
+    <div class="card bg-light mt-5 mb-5">
+      <div class="container">
+        <h2 class="mb-5 focuseable">Ubicación de las canchas</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!-- URL de Google Maps Embed API -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.237877236263!2d-16.32359104547563!3d28.47154124846681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cda217457613%3A0xa3e2be1d5222cb97!2sCiudad%20Deportiva%20Javier%20Perez!5e0!3m2!1ses!2ses!4v1687264664654!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-2 focuseable">Complejo deportivo QuickFit</h4>
+            <p class="focuseable">Cam. la Feria, 9B, 38296 La Laguna, Santa Cruz de Tenerife</p>
+            <p class="mb-5 focuseable">Las canchas se encuentran ubicadas junto al pabellón deportivo y la piscina, se trata de un complejo deportivo</p>
+            <a class="btn btn-primary text-center ms-3 link focuseable" id="EnlaceGoogleMaps" aria-label="Ir a dirección en google maps" href="https://goo.gl/maps/ygV3Q239e1Fjeyh36">Enlace a dirección en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="subirArribaContainer">
+    <button class="btn btn-secondary btn-lg" id="subirArriba" onclick="scrollToTop()" aria-label="Navegar hacia arriba">Subir Arriba</button>
+    <button type="button" class="btn btn-close" id="cerrarSubirArriba" onclick="closeButton()" aria-label="Cerrar navegación hacia arriba"></button>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+  <p class="focuseable" id="copyright">&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+  <div class="col">
+    <a class="btn btn-primary text-center mt-3" id="footer-link-accesibilidad" href="../views/accesibilidad.html">Accesibilidad</a>
+    <a class="btn btn-primary text-center ms-3 mt-3" id="footer-link-mapaweb" href="../views/mapaweb.html">Mapa web</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/focuseable.js"></script>
+<script src="../js/scrollUp.js"></script>
+</body>
+</html>

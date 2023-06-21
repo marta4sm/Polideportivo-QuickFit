@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Web - Polideportivo QuickFit</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/inicio.html">
+            <img src="../assets/img/logo.png" alt="Logotipo Polideportivo QuickFit" aria-label="Ir a Página Principal" width="50" height="50" class="d-inline-block align-text-center">
+            Polideportivo QuickFit
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="focuseable"><a class="dropdown-item" href="../views/canchas.html">Canchas</a></li>
+                  <li class="focuseable"><a class="dropdown-item" href="../views/gimnasio.html">Gimnasio</a></li>
+                  <li class="focuseable"><a class="dropdown-item" href="../views/piscinas.html">Piscinas</a></li>
+                  <li class="focuseable"><a class="dropdown-item" href="../views/pistas.html">Pistas interiores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/eventos&noticias.html">Eventos y Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Entrada de búsqueda">
+              <button class="btn btn-danger" id="search-button" aria-label="Realizar búsqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+  </header>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom mt-3">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="../views/inicio.html" style="font-weight: bold;">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" href="../views/mapaweb.html" style="font-weight: bold;">Accesibilidad</a></li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <section class="my-2">
+      <h1 class="display-4 mb-5 focuseable"><strong>Declaración de Accesibilidad</strong></h1>
+      <section>
+        <h2 class="focuseable">Situación de cumplimiento</h2>
+        <p class="focuseable">El Polideportivo QuickFit se ha comprometido a hacer accesible su sitio web de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.</p>
+        <p class="focuseable">Este sitio web es parcialmente conforme con el RD 1112/2018 y cumple los siguientes requisitos utilizando las técnicas WCAG 2.1 mostradas a continuación:</p>
+      </section>
+
+      <section>
+        <h4 class="focuseable">1.1.1 Contenido no textual - Nivel A</h4>
+        <p class="focuseable">Todo el contenido que no es de texto que se presenta al usuario tiene una alternativa de texto que cumple un propósito equivalente.</p>
+        <ul>
+          <li class="focuseable">G94: Proporcionar una alternativa de texto corto para contenido que no sea de texto que tenga el mismo propósito y presente la misma información que el contenido que no sea de texto</li>
+          <li class="focuseable">G95: Proporcionar alternativas de texto corto que brinden una breve descripción del contenido que no es de texto</li>
+          <li class="focuseable">G82: Proporcionar una alternativa de texto que identifique el propósito del contenido que no es de texto</li>
+          <li class="focuseable">ARIA6: Uso de aria-label para proporcionar etiquetas para objetos</li>
+          <li class="focuseable">ARIA10: Uso de aria-labelledby para proporcionar una alternativa de texto para contenido que no es de texto.</li>
+          <li class="focuseable">G196: Usar una alternativa de texto en un elemento dentro de un grupo de imágenes que describe todos los elementos del grupo.</li>
+          <li class="focuseable">H37: Usando atributos alt en elementos img</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h4 class="focuseable">1.3.1 Información y relaciones - Nivel A</h4>
+        <p class="focuseable">La información, la estructura y las relaciones transmitidas a través de la presentación se pueden determinar mediante programación o están disponibles en el texto.</p>
+        <ul>
+          <li class="focuseable">Técnica G115: Uso de elementos semánticos para marcar la estructura</li>
+          <li class="focuseable">H49: Uso de marcado semántico para marcar texto especial o enfatizado</li>
+          <li class="focuseable">H48: Uso de ol, ul y dl para listas o grupos de enlaces</li>
+          <li class="focuseable">H42: Uso de h1-h6 para identificar encabezados</li>
+          <li class="focuseable">ARIA12: Usar role=heading para identificar encabezados</li>
+          <li class="focuseable">ARIA13: Uso de aria-labelledby para nombrar regiones y puntos de referencia</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h4 class="focuseable">1.3.2 Secuencia significativa - Nivel A</h4>
+        <p class="focuseable">Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar mediante programación una secuencia de lectura correcta.</p>
+        <ul>
+          <li class="focuseable">G57: Ordenar el contenido en una secuencia significativa</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.3.4 Orientation - Level AA</h4>
+        <p class="focuseable">El contenido no restringe su visualización y funcionamiento a una única orientación de visualización, como vertical u horizontal, a menos que sea esencial una orientación de visualización específica.</p>
+        <p class="focuseable">Usar CSS para establecer la orientación para permitir tanto una orientación vertical como horizontal.</p>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.3.5 Identify Input Purpose - Level AA</h4>
+        <p class="focuseable">El propósito de cada campo de entrada que recopila información sobre el usuario se puede determinar mediante programación.</p>
+        <p class="focuseable">El contenido se implementa utilizando tecnologías con soporte para identificar el significado esperado para los datos de entrada del formulario.</p>
+        <ul>
+          <li class="focuseable">H98: Uso de atributos de autocompletar de HTML 5.2</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.4.1 Use of Color - Level A</h4>
+        <p class="focuseable">El color no se utiliza como el único medio visual para transmitir información, indicar una acción, provocar una respuesta o distinguir un elemento visual.</p>
+        <ul>
+          <li class="focuseable">G14: Garantizar que la información transmitida por las diferencias de color también esté disponible en el texto</li>
+          <li class="focuseable">G205: Incluyendo una señal de texto para etiquetas de control de formulario de colores</li>
+          <li class="focuseable">G183: Usar una relación de contraste de 3:1 con el texto que lo rodea y proporcionar señales visuales adicionales al pasar el mouse por encima de los enlaces o controles donde solo se usa el color para identificarlos</li>
+          <li class="focuseable">C15: Uso de CSS para cambiar la presentación de un componente de la interfaz de usuario cuando recibe el foco</li>
+        </ul>
+      </section>
+    
+      <section>
+        <h4 class="focuseable">1.4.3 Contraste (Mínimo) - Nivel AA</h4>
+        <p class="focuseable">Para texto de menos de 18 puntos si no está en negrita y de menos de 14 puntos si está en negrita:</p>
+        <ul>
+          <li class="focuseable">G183: Usar una relación de contraste de 3:1 con el texto que lo rodea y proporcionar señales visuales adicionales al pasar el mouse por encima de los enlaces o controles donde solo se usa el color para identificarlos.</li>
+        </ul>
+        <p class="focuseable">Para texto de al menos 18 puntos si no está en negrita y de al menos 14 puntos si está en negrita:</p>
+        <ul>
+          <li class="focuseable">G145: Garantizar que exista una relación de contraste de al menos 3:1 entre el texto (y las imágenes del texto) y el fondo detrás del texto.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.4.4 Cambio de tamaño del texto - Nivel AA</h4>
+        <p class="focuseable">A excepción de los subtítulos y las imágenes de texto, el texto se puede cambiar de tamaño sin tecnología de asistencia hasta en un 200 por ciento sin pérdida de contenido o funcionalidad.</p>
+        <ul>
+          <li class="focuseable">G142: Usar una tecnología que tiene agentes de usuario comúnmente disponibles que admiten zoom.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.4.11 Contraste de no texto - Nivel AA</h4>
+        <p class="focuseable">La presentación visual de los Componentes de Interfaz de Usuario y Objetos Gráficos tienen una relación de contraste de al menos 3:1 frente a los colores adyacentes.</p>
+        <ul>
+          <li class="focuseable">G195: Uso de un indicador de enfoque altamente visible proporcionado por el autor.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.4.12 Espaciado de texto - Nivel AA</h4>
+        <p class="focuseable">En el contenido implementado, aplicando las siguientes reglas de estilo, no se pierde contenido ni funcionalidad.</p>
+        <ul>
+          <li class="focuseable">Interlineado de al menos 1,5 veces el tamaño de fuente.</li>
+          <li class="focuseable">Espaciado de párrafos de al menos 2 veces el tamaño de la fuente.</li>
+          <li class="focuseable">Espaciado entre letras de al menos 0,12 veces el tamaño de la fuente.</li>
+          <li class="focuseable">Espaciado entre palabras de al menos 0,16 veces el tamaño de la fuente.</li>
+        </ul>
+        <p class="focuseable">C36: Permitir anular el espaciado de texto.</p>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">1.4.13 Contenido al pasar el mouse o enfocar - Nivel AA</h4>
+        <p class="focuseable">Cuando se recibe el foco o se apunta con el cursor a un elemento y esto desencadena que aparezca/desaparezca contenido adicional, este es persistente y además se puede mover el puntero sobre el contenido adicional sin que este desaparezca.</p>
+        <ul>
+          <li class="focuseable">ARIA: Uso de role="tooltip".</li>
+          <li class="focuseable">CSS: Uso de pseudo clases de hover y focus.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4 class="focuseable">2.1.1 Teclado - Nivel A</h4>
+        <p class="focuseable">Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado sin requerir tiempos específicos para pulsaciones de teclas individuales.</p>
+        <ul>
+          <li class="focuseable">G202: Garantizar el control del teclado para todas las funciones.</li>
+          <li class="focuseable">H91: Uso de enlaces y controles de formulario HTML.</li>
+          <li class="focuseable">G90: Proporcionar controladores de eventos activados por teclado.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.1.2 Sin atrapamiento del teclado - Nivel A</h4>
+        <p class="focuseable">Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el foco se puede alejar de ese componente usando solo una interfaz de teclado.</p>
+        <ul>
+          <li class="focuseable">G21: Garantizar que los usuarios no queden atrapados en el contenido.</li>
+        </ul>
+      </section>
+            
+      <section>
+        <h4 class="focuseable">2.4.2 Título de página - Nivel A</h4>
+        <p class="focuseable">Las páginas web tienen títulos que describen correctamente el tema o el propósito.</p>
+        <ul>
+          <li class="focuseable">G88: Proporcionar títulos descriptivos para páginas web.</li>
+          <li class="focuseable">H25: Proporcionar un título utilizando el elemento de title.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.4.3 Orden de enfoque - Nivel A</h4>
+        <p class="focuseable">Se puede navegar secuencialmente por cada página web y los componentes enfocables reciben el enfoque en un orden que preserva el significado y la operabilidad.</p>
+        <ul>
+          <li class="focuseable">G59: Colocar los elementos interactivos en un orden que sigue secuencias y relaciones dentro del contenido.</li>
+          <li class="focuseable">H4: Crear un orden de tabulación lógico a través de enlaces, controles de formulario y objetos.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.4.4 Propósito del enlace (En contexto)</h4>
+        <p class="focuseable">El propósito de cada enlace se puede determinar a partir del texto del enlace solo o del texto del enlace junto con su contexto de enlace determinado mediante programación.</p>
+        <ul>
+          <li class="focuseable">G91: Proporcionar texto de enlace que describa el propósito de un enlace.</li>
+          <li class="focuseable">H24: Proporcionar alternativas de texto para los elementos de área de los mapas de imágenes.</li>
+          <li class="focuseable">ARIA8: Uso de aria-label para describir el fin del enlace.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.4.5 Múltiples formas - Nivel AA</h4>
+        <p class="focuseable">Existe más de una manera disponible para ubicar una página web dentro de un conjunto de páginas web.</p>
+        <ul>
+          <li class="focuseable">G125: Proporcionar enlaces para navegar a páginas web relacionadas.</li>
+          <li class="focuseable">G63: Proporcionar un mapa del sitio.</li>
+          <li class="focuseable">G161: Proporcionar una función de búsqueda para ayudar a los usuarios a encontrar contenido.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.4.6 Encabezados y etiquetas - Nivel AA</h4>
+        <p class="focuseable">Los encabezados y las etiquetas describen el tema o el propósito.</p>
+        <ul>
+          <li class="focuseable">G130: Proporcionar encabezados descriptivos.</li>
+          <li class="focuseable">G131: Proporcionar etiquetas descriptivas.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">2.4.7 Enfoque visible - Nivel AA</h4>
+        <p class="focuseable">Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.</p>
+        <ul>
+          <li class="focuseable">G149: Uso de componentes de interfaz de usuario que son resaltados por el agente de usuario cuando reciben el foco.</li>
+          <li class="focuseable">C15: Uso de CSS para cambiar la presentación de un componente de la interfaz de usuario cuando recibe el foco.</li>
+          <li class="focuseable">G195: Uso de un indicador de enfoque altamente visible proporcionado por el autor.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">3.1.1 Idioma de la página - Nivel A</h4>
+        <p class="focuseable">El idioma humano predeterminado de cada página web se puede determinar mediante programación.</p>
+        <ul>
+          <li class="focuseable">H57: Uso de atributos de idioma en el elemento html.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4 class="focuseable">3.2.2 En entrada - Nivel A</h4>
+        <p class="focuseable">Cambiar la configuración de cualquier componente de la interfaz de usuario no provoca automáticamente un cambio de contexto a menos que se haya informado al usuario sobre el comportamiento antes de usar el componente.</p>
+        <ul>
+          <li class="focuseable">G80: Proporcionar un botón de envío (submit) para iniciar un cambio de contexto.</li>
+          <li class="focuseable">H32: Proporcionar botones de envío (submit).</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">3.2.3 Navegación consistente - Nivel AA</h4>
+        <p class="focuseable">Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas web ocurren en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.</p>
+        <ul>
+          <li class="focuseable">G61: Presentar componentes repetidos en el mismo orden relativo cada vez que aparecen.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">3.2.4 Identificación coherente - Nivel AA</h4>
+        <p class="focuseable">Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente.</p>
+        <ul>
+          <li class="focuseable">G197: Uso consistente de etiquetas, nombres y alternativas de texto para contenido que tiene la misma funcionalidad.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">3.3.1 Identificación de errores - Nivel A</h4>
+        <p class="focuseable">Si se detecta automáticamente un error de entrada, se identifica el elemento que tiene el error y se describe el error al usuario en texto.</p>
+        <ul>
+          <li class="focuseable">G83: Proporcionar descripciones de texto para identificar los campos obligatorios que no se completaron.</li>
+          <li class="focuseable">G84: Proporcionar una descripción de texto cuando el usuario proporciona información que no está en la lista de valores permitidos.</li>
+          <li class="focuseable">G85: Proporcionar una descripción de texto cuando la entrada del usuario está fuera del formato o los valores requeridos.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4 class="focuseable">3.3.2 Etiquetas o Instrucciones - Nivel A</h4>
+        <p class="focuseable">Se proporcionan etiquetas o instrucciones cuando el contenido requiere la intervención del usuario.</p>
+        <ul>
+          <li class="focuseable">G131: Proporcionar etiquetas descriptivas.</li>
+          <li class="focuseable">G89: Proporcionar formato de datos esperado y ejemplo.</li>
+          <li class="focuseable">G184: Proporcionar instrucciones de texto al comienzo de un formulario o conjunto de campos que describen la entrada necesaria.</li>
+          <li class="focuseable">G83: Proporcionar descripciones de texto para identificar los campos obligatorios que no se completaron.</li>
+          <li class="focuseable">H90: Indicación de controles de formulario requeridos mediante etiqueta o leyenda.</li>
+          <li class="focuseable">H44: Uso de elementos de etiqueta para asociar etiquetas de texto con controles de formulario.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">3.3.3 Sugerencia de Errores - Nivel AA</h4>
+        <p class="focuseable">Si se detecta automáticamente un error de entrada y se conocen sugerencias para su corrección, estas sugerencias se proporcionan al usuario.</p>
+        <ul>
+          <li class="focuseable">G83: Proporcionar descripciones de texto para identificar los campos obligatorios que no se completaron.</li>
+          <li class="focuseable">G85: Proporcionar una descripción de texto cuando la entrada del usuario está fuera del formato o los valores requeridos.</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h4 class="focuseable">4.1.1 Análisis de sintaxis - Nivel A</h4>
+        <p class="focuseable">En el contenido implementado mediante lenguajes de marcado, los elementos tienen etiquetas de inicio y finalización completas, los elementos se anidan de acuerdo con sus especificaciones, los elementos no contienen atributos duplicados y cualquier ID es único.</p>
+        <ul>
+          <li class="focuseable">G134: Validación de páginas web.</li>
+          <li class="focuseable">G192: Totalmente conforme a las especificaciones.</li>
+          <li class="focuseable">H88: Uso de HTML de acuerdo con las especificaciones.</li>
+        </ul>
+      </section>
+           
+      <section>
+        <h2 class="focuseable">Contenido no accesible</h2>
+        <p class="focuseable">El contenido que se recoge a continuación no es accesible por lo siguiente:</p>
+        <ul>
+          <li class="focuseable">Fallo en 3.1.2 Language of Parts - Level AA. El idioma humano de cada pasaje o frase en el contenido no se puede determinar mediante programación.</li>
+          <li class="focuseable">Fallo en 2.4.1 Saltar bloques - Nivel A. No existe un mecanismo disponible para eludir bloques de contenido que se repiten en varias páginas web.</li>
+          <li class="focuseable">En algunas páginas los headers no escalan secuencialmente de uno en uno</li>
+          <li class="focuseable">Podrían existir fallos puntuales de edición en alguna página web.</li>
+        </ul>
+      </section>
+       
+      <section>
+        <h2 class="mb-3 focuseable">Atajos de teclado</h2>
+        <ul>
+            <li class="focuseable">Navegar hacia arriba: Ctrl + Shift + U</li>
+            <li class="focuseable">Navegar hacia abajo: Ctrl + Shift + W</li>
+            <li class="focuseable">(Activar / Desactivar) botón de navegación hacia arriba: Ctrl + Shift + X</li>
+        </ul>
+      </section>
+      <footer>
+        <p class="focuseable">Última revisión de la declaración: 21 de junio de 2023.</p>
+      </footer>
+    </body>
+    </html>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="focuseable" id="copyright">&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+    <div class="col">
+      <a class="btn btn-primary text-center mt-3" aria-current="page" id="footer-link-accesibilidad" href="../views/accesibilidad.html">Accesibilidad</a>
+      <a class="btn btn-primary text-center ms-3 mt-3" id="footer-link-mapaweb" href="../views/mapaweb.html">Mapa web</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/focuseable.js"></script>
+  <script src="../js/scrollUp.js"></script>
+</body>
+</html>

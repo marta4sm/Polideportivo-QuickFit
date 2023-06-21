@@ -1,0 +1,303 @@
+/* Estilos generales */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#search-button:focus {
+  outline: dashed  black;
+  outline-width: 0.25rem;
+  font-weight: bold; 
+}
+
+
+/* Estilos de las tarjetas de instalaciones */
+.card {
+  transition: transform 0.3s; /* Agregar una transición suave al pasar el cursor sobre las tarjetas */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  background: linear-gradient(90deg, #2b9eff, #007bff, #005cbf, #003d80); /* Azul claro al azul oscuro */
+  color: black;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos de los botones */
+.btn {
+  border-radius: 50px; /* Cambiar la forma de los botones a redondeada */
+}
+
+
+/* Estilos de los sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+
+#ExplorarActividades:focus, #ExplorarEventos:focus, #EnlaceGoogleMaps:focus {
+  outline: dashed  black;
+  outline-width: 0.30rem;
+  font-weight: bold;        
+}
+
+
+.card:focus, .breadcrumb-link:focus, .webmap-link:focus {
+  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
+  box-shadow: 0 0 20px rgba(42, 42, 43, 0.5);
+  outline: solid red;
+  outline-width: 0.30rem;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
+  box-shadow: 0 0 20px rgba(42, 42, 43, 0.5);
+}
+
+.card-title {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-text {
+  color: black;
+}
+
+/* Estilos del pie de página */
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar-custom {
+  height: 30px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 30px; /* Ajusta el tamaño de la fuente para el logotipo */
+  padding: 10px 15px; /* Ajusta el espacio interno del logotipo */
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  padding: 5px; /* Ajusta el espacio interno de los enlaces de navegación */
+}
+
+/* Estilos generales para los enlaces */
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el enlace activo */
+.nav-link.active {
+  color: #fff;
+  background: #545252; 
+  font-weight: bold;
+}
+
+/* Estilos adicionales para resaltar */
+.nav-link.active {
+  box-shadow: 0 0 10px rgba(42, 42, 43, 0.5);
+  border-radius: 4px;
+}
+
+/* Estilos para la accesibilidad */
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #545252;
+  outline: none;
+}
+
+
+.collapse .navbar-collapse {
+  color: white;
+}
+
+#subirArriba {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#subirArriba:hover {
+  background-color: #333333;
+}
+
+#subirArriba:focus, #cerrarSubirArriba:focus {
+  outline: dashed  black;
+  outline-width: 0.25rem;
+  font-weight: bold; 
+}
+
+#footer-link-accesibilidad:focus, #footer-link-mapaweb:focus {
+  outline: dashed  red;
+  outline-width: 0.25rem;
+  font-weight: bold; 
+}
+
+#subirArriba.show {
+  display: block;
+}
+
+#cerrarSubirArriba:hover {
+  background-color: #ff0000;
+}
+
+#cerrarSubirArriba.show {
+  display: block;
+}
+
+#cerrarSubirArriba {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: red; /* Cambia el color al pasar el cursor */
+  transform: scale(1.35); /* Aumentar el tamaño de la tarjeta al pasar el cursor sobre ella */
+}
+
+.social-icons a:focus {
+  outline: dashed  red;
+  outline-width: 0.25rem;
+  font-weight: bold; 
+}
+
+.breadcrumb-custom {
+  margin-left: 20px;
+}
+
+.disabled-link {
+  pointer-events: none;
+  color: rgb(61, 60, 60); /* Opcional: Cambiar el color para indicar que está deshabilitado */
+  text-decoration: none; /* Opcional: Quitar subrayado */
+  cursor: default; /* Opcional: Cambiar el cursor al valor por defecto */
+  font-weight: bold;
+}
+
+
+.webmap li {
+  margin-bottom: 0.5rem;
+}
+
+.webmap-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+.webmap-link:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.webmap-instalaciones {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.cabecera {
+  color: white;
+  background: #007bff; 
+}
+
+.table {
+  border-style: solid;
+  border-width: 0.35rem;
+  border-color: black;
+}
+
+.table td:hover {
+  font-weight: bold;
+}
+
+.focuseable:focus {
+  outline: solid black; 
+}
+
+#copyright:focus {
+  outline: solid red;
+}
+
+.row-deck {
+  scale: 0.85;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+
+}

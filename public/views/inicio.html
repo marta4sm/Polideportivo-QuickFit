@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Polideportivo QuickFit</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/inicio.html">
+            <img src="../assets/img/logo.png" alt="Logotipo Polideportivo QuickFit" aria-label="Ir a Página Principal" width="50" height="50" class="d-inline-block align-text-center">
+            Polideportivo QuickFit
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../views/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../views/canchas.html">Canchas</a></li>
+                  <li><a class="dropdown-item" href="../views/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="../views/piscinas.html">Piscinas</a></li>
+                  <li><a class="dropdown-item" href="../views/pistas.html">Pistas interiores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/eventos&noticias.html">Eventos y Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Entrada de búsqueda">
+              <button class="btn btn-danger" id="search-button" aria-label="Realizar búsqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+  </header>
+
+  <main class="container">
+      <section class="text-center my-5">
+        <h1 class="display-4 focuseable">Bienvenidos al Polideportivo QuickFit</h1>
+        <p class="lead mt-4 focuseable">¡Descubre nuestras instalaciones y participa en emocionantes eventos deportivos!</p>
+        <blockquote class="blockquote mb-0">
+          <p class="focuseable">"Un cuerpo sano es un recinto para el alma"</p>
+          <footer class="blockquote-footer focuseable">Francis Bacon</footer>
+        </blockquote>
+        <a href="../views/actividades.html" class="btn btn-primary btn-lg mt-5 mb-5" id="ExplorarActividades" aria-label="Explorar Actividades">Explora nuestras actividades</a>
+      </section>
+    
+      <section class="my-5">
+        <h2 class="text-center display-4 mb-5 focuseable">Conoce nuestras instalaciones</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-5 my-3">
+              <div class="card ms-5">
+                <img src="../assets/img/cancha.png" class="card-img-top" alt="Imagen de nuestras canchas">
+                <div class="card-body">
+                  <h5 class="card-title">Canchas</h5>
+                  <p class="card-text">Disfruta de nuestras canchas al aire libre donde podrás practicar diferentes deportes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5 my-3">
+              <div class="card ms-5">
+                <img src="../assets/img/gimnasio.png" class="card-img-top" alt="Imagen de nuestro gimnasio">
+                <div class="card-body">
+                  <h5 class="card-title">Gimnasios</h5>
+                  <p class="card-text">Mantén tu forma física en nuestros modernos gimnasios equipados con la última tecnología SmartFit en maquinaria.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-5 my-3">
+              <div class="card ms-5"> 
+                <img src="../assets/img/piscina.png" class="card-img-top" alt="Imagen de nuestras Piscinas">
+                <div class="card-body">
+                  <h5 class="card-title">Piscinas</h5>
+                  <p class="card-text">Relájate y disfruta en nuestras amplias piscinas ideales para natación y recreación. ¡Tenemos jacuzzi y saunas con hidromasaje!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5 my-3">
+              <div class="card ms-5">
+                <img src="../assets/img/pabellon.png" class="card-img-top" alt="Imagen de nuestras pistas">
+                <div class="card-body">
+                  <h5 class="card-title">Pistas Interiores</h5>
+                  <p class="card-text">Juega en nuestras pistas interiores adaptadas para deportes como fútbol sala, baloncesto y voleibol.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section class="text-center">
+      <h2 class="display-4 focuseable">Próximos Eventos</h2>
+      <p class="lead mb-4 focuseable">No te pierdas nuestros emocionantes eventos y competiciones deportivas.</p>
+      <a href="../views/eventos&noticias.html" id="ExplorarEventos" class="btn btn-primary btn-lg mb-3">Explorar eventos</a>
+    </section>
+
+    <div class="subirArribaContainer">
+      <button class="btn btn-secondary btn-lg" id="subirArriba" onclick="scrollToTop()" aria-label="Navegar hacia arriba">Subir Arriba</button>
+      <button type="button" class="btn btn-close" id="cerrarSubirArriba" onclick="closeButton()" aria-label="Cerrar navegación hacia arriba"></button>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="focuseable" id="copyright">&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+    <div class="col">
+      <a class="btn btn-primary text-center mt-3" id="footer-link-accesibilidad" href="../views/accesibilidad.html">Accesibilidad</a>
+      <a class="btn btn-primary text-center ms-3 mt-3" id="footer-link-mapaweb" href="../views/mapaweb.html">Mapa web</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/focuseable.js"></script>
+  <script src="../js/scrollUp.js"></script>
+</body>
+</html>
