@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piscinas - Polideportivo QuickFit</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/inicio.html">
+            <img src="../assets/img/logo.png" alt="Logotipo Polideportivo QuickFit" aria-label="Ir a Página Principal" width="50" height="50" class="d-inline-block align-text-center">
+            Polideportivo QuickFit
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../views/canchas.html">Canchas</a></li>
+                  <li><a class="dropdown-item" href="../views/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item active" aria-current="page" href="../views/piscinas.html">Piscinas</a></li>
+                  <li><a class="dropdown-item" href="../views/pistas.html">Pistas interiores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/eventos&noticias.html">Eventos y Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Entrada de búsqueda">
+              <button class="btn btn-danger" id="search-button" aria-label="Realizar búsqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+  </header>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom mt-3">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="../views/inicio.html" style="font-weight: bold;">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Instalaciones</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Piscinas</a></li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <section class="text-center my-5">
+      <h1 class="display-4 mb-5"><strong>Piscinas</strong></h1>
+    </section>
+
+   <!-- Texto de información de la piscina -->
+   <p class="h2 mb-3 mt-5">Piscina climatizada</p>
+   <div class="card bg-light mb-3" >
+     <div class="row g-0">
+       <div class="col-md-4">
+         <img src="../assets/img/piscina1.jpg" class="img-fluid rounded-start" alt="Piscina general">
+       </div>
+       <div class="col-md-8">
+         <div class="card-body">
+           <h5 class="card-title">Nuestra piscina interior</h5>
+           <p class="card-text">¡Descubre nuestra increíble piscina climatizada! Nuestra piscina, ubicada en un entorno tranquilo y relajante, te 
+            ofrece una experiencia de natación única durante todo el año. Gracias a nuestro sistema de climatización de vanguardia, el agua se 
+            mantiene a una temperatura perfecta, permitiéndote disfrutar de un baño relajante sin importar las condiciones climáticas. Nuestra piscina
+            cuenta con amplias dimensiones y aguas cristalinas, ideales para nadar y practicar actividades acuáticas. Además, nuestro equipo 
+            profesional y amable está siempre disponible para brindarte asistencia y asegurar que tu experiencia sea placentera. Ven y sumérgete en 
+            nuestro oasis de bienestar, donde la diversión y el relax te esperan en cada chapuzón.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  <!-- Acordeón informativo de servicios de la psicina-->
+  <h2 class="mb-3 mt-5 focuseable">Servicios proporcionados</h2>
+  <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Piscina climatizada
+        </button>
+        
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <p class="focuseable">Nuestra piscina es amplia y espaciosa, ofreciendo suficiente espacio para nadar, jugar y relajarse.
+            Está diseñada con diferentes profundidades para adaptarse a las necesidades de nadadores de todas las edades y habilidades.
+            Contamos con zonas separadas, como una piscina para niños con juegos acuáticos y una zona tranquila para adultos que buscan relajarse.
+            Disponemos de tumbonas y sombrillas en áreas designadas para que puedas descansar cómodamente.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Normas y reglamento
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body focuseable">
+          <strong>Comportamiento adecuado</strong>
+          <p>No correr, empujar, lanzarse o jugar de manera brusca en las áreas de la piscina.
+          Evitar conductas que puedan poner en riesgo a otros visitantes, como lanzar objetos o empujar a otros al agua.
+          Respetar la tranquilidad de las áreas designadas para adultos.</p>
+          
+          <strong>Higiene y limpieza:</strong>
+          <p>Tomar una ducha antes de ingresar a la piscina para mantener un ambiente limpio.
+          No introducir alimentos, bebidas o objetos que puedan ensuciar el agua.
+          Utilizar los basureros y ceniceros designados para desechar residuos.</p>
+          
+          <strong>Indumentaria apropiada</strong>
+          <p>Usar traje de baño adecuado para ingresar a la piscina (según las normas específicas del lugar).
+          Evitar el uso de objetos que puedan comprometer la seguridad o higiene, como zapatos, lentes de sol o joyas grandes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Socorristas y material deportivo
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body focuseable">
+          <strong>Material deportivo</strong>
+          <p>Ofrecemos una amplia selección de material deportivo para agregar diversión y variedad a tu experiencia en la piscina.
+            Puedes disfrutar de pelotas inflables, flotadores, aros de baloncesto acuáticos y otros equipos para jugar y ejercitarte en el agua.
+            El material deportivo está disponible para su uso tanto en actividades organizadas como para el disfrute individual.</p>
+          <strong>Socorristas</strong>
+          <p>Nuestro equipo de socorristas está altamente capacitado en primeros auxilios y técnicas de rescate acuático.
+            Están presentes en todo momento para garantizar la seguridad de los visitantes y responder rápidamente en caso de emergencia.
+            Los socorristas están disponibles para brindar asesoramiento y orientación sobre el uso seguro de la piscina y las instalaciones.
+            Están disponibles durante todas las horas disponibles de la piscina.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto de información de actividad aquafitness -->
+  <p class="h2 mb-5 mt-3 focuseable">Actividades aquafitness</p>
+  <div class="card bg-light mb-5" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../assets/img/aquaaerobics.jpg" class="img-fluid rounded-start" alt="Aqua aeróbicos">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Aqua Aeróbicos</h5>
+          <p class="card-text">Esta actividad se centra en ejercicios aeróbicos realizados en el agua. Siguiendo el ritmo de la música, realizarás
+             movimientos energéticos que te ayudarán a mejorar tu resistencia cardiovascular, tonificar tus músculos y quemar calorías de forma 
+             divertida y refrescante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-light mb-5" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../assets/img/aqua-yoga.jpg" class="img-fluid rounded-start" alt="Agua yoga">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Aqua Yoga</h5>
+          <p class="card-text">Si buscas una actividad que combine la tranquilidad del yoga con la resistencia del agua, Aqua Yoga es perfecto para 
+            ti. Esta práctica te permite realizar posturas de yoga adaptadas al medio acuático, lo que te brinda un mayor soporte y estabilidad. Aqua 
+            Yoga ayuda a mejorar la flexibilidad, fortalecer los músculos y promover la relajación y el equilibrio mental.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Ubicación -->
+    <div class="card bg-light mt-5 mb-5">
+      <div class="container">
+        <h2 class="mb-5 focuseable">Ubicación de las canchas</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!-- URL de Google Maps Embed API -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.237877236263!2d-16.32359104547563!3d28.47154124846681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cda217457613%3A0xa3e2be1d5222cb97!2sCiudad%20Deportiva%20Javier%20Perez!5e0!3m2!1ses!2ses!4v1687264664654!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-2 focuseable">Complejo deportivo QuickFit</h4>
+            <p class="focuseable">Cam. la Feria, 9B, 38296 La Laguna, Santa Cruz de Tenerife</p>
+            <p class="mb-5 focuseable">Las canchas se encuentran ubicadas junto al pabellón deportivo y la piscina, se trata de un complejo deportivo</p>
+            <a class="btn btn-primary text-center ms-3 link focuseable" id="EnlaceGoogleMaps" aria-label="Ir a dirección en google maps" href="https://goo.gl/maps/ygV3Q239e1Fjeyh36">Enlace a dirección en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="subirArribaContainer">
+    <button class="btn btn-secondary btn-lg" id="subirArriba" onclick="scrollToTop()" aria-label="Navegar hacia arriba">Subir Arriba</button>
+    <button type="button" class="btn btn-close" id="cerrarSubirArriba" onclick="closeButton()" aria-label="Cerrar navegación hacia arriba"></button>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+  <p class="focuseable" id="copyright">&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+  <div class="col">
+    <a class="btn btn-primary text-center mt-3" id="footer-link-accesibilidad" href="../views/accesibilidad.html">Accesibilidad</a>
+    <a class="btn btn-primary text-center ms-3 mt-3" id="footer-link-mapaweb" href="../views/mapaweb.html">Mapa web</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/focuseable.js"></script>
+<script src="../js/scrollUp.js"></script>
+</body>
+</html>

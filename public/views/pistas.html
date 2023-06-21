@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pistas - Polideportivo QuickFit</title>
+  <link rel="icon" href="../assets/img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/inicio.html">
+            <img src="../assets/img/logo.png" alt="Logotipo Polideportivo QuickFit" aria-label="Ir a Página Principal" width="50" height="50" class="d-inline-block align-text-center">
+            Polideportivo QuickFit
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../views/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Instalaciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../views/canchas.html">Canchas</a></li>
+                  <li><a class="dropdown-item" href="../views/gimnasio.html">Gimnasio</a></li>
+                  <li><a class="dropdown-item" href="../views/piscinas.html">Piscinas</a></li>
+                  <li><a class="dropdown-item active" aria-current="page" href="../views/pistas.html">Pistas interiores</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/eventos&noticias.html">Eventos y Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Entrada de búsqueda">
+              <button class="btn btn-danger" id="search-button" aria-label="Realizar búsqueda" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+  </header>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom mt-3">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="../views/inicio.html" style="font-weight: bold;">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Instalaciones</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a class="disabled-link" style="font-weight: bold;">Pistas</a></li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <section class="text-center my-5">
+      <h1 class="display-4 focuseable"><strong>Pistas</strong></h1>
+    </section>
+    
+   <!-- Texto de información de la cancha interior -->
+   <h2 class="h2 mb-5 focuseable">Pistas interiores</h2>
+   <div class="card bg-light mb-5" >
+     <div class="row g-0">
+       <div class="col-md-4">
+         <img src="../assets/img/pabellon1.jpg" class="img-fluid rounded-start" alt="Cancha interior del pabellón">
+       </div>
+       <div class="col-md-8">
+         <div class="card-body">
+           <h5 class="card-title">Polideportivo interior de QuickFit</h5>
+           <p class="card-text">¡Descubre la emoción y la diversión en nuestra pista interior! Ya sea que seas un amante del 
+            baloncesto, un fanático del voleibol o simplemente busques un espacio cubierto para mantenerte activo, nuestro pabellón es el lugar 
+            perfecto para ti. Con nuestra pistas versátil, superficies de juego de alta calidad y un ambiente vibrante, te invitamos a sumergirte 
+            en la acción y disfrutar de tus deportes favoritos. ¡Ven y forma parte de la energía contagiosa mientras compites, entrenas o simplemente 
+            te diviertes con amigos y familiares! Nuestro pabellón te ofrece la combinación perfecta de instalaciones de primer nivel y un ambiente 
+            acogedor.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!--Acordeón con información de servicios proporcionados-->
+   <h2 class="mb-4 mt-5 focuseable">Servicios proporcionados</h2>
+  <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <strong>Nuestras instalaciones</strong>
+        </button>
+        
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body focuseable">
+          <strong>Superficie y dimensiones</strong>
+          <p>La superficie del pabellón está construida con un material de alta calidad y durabilidad y las medidas son 40x20 metros. Dependiendo de 
+            los deportes que se practiquen, la superficie puede ser de parqué, césped artificial, canchas de resina u otros materiales especializados.
+            Nos aseguramos de mantener la superficie en óptimas condiciones para brindar un rendimiento adecuado y reducir el riesgo de lesiones.</p>
+
+          <strong>Gradas</strong>
+          <p>Contamos con gradas en el pabellón para que los espectadores puedan disfrutar de los eventos deportivos y apoyar a los equipos. Nuestras 
+            gradas están diseñadas para proporcionar comodidad y una buena visibilidad, permitiendo a los espectadores disfrutar de la acción 
+            deportiva de manera cómoda y segura.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <strong>Normas y reglamento</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body focuseable">
+          <p>La seguridad y el bienestar de nuestros visitantes son primordiales. Por ello, contamos con normas y reglamentos claros que todos los 
+            usuarios deben seguir.
+            Estas normas incluyen el uso adecuado de las instalaciones, el respeto hacia los demás participantes y el seguimiento de las instrucciones
+             del personal.
+            Se requiere el uso de calzado deportivo adecuado en todas las áreas de juego para garantizar la seguridad y prevenir lesiones.
+            Está prohibido fumar, consumir alcohol o sustancias ilegales dentro de las instalaciones deportivas.
+            </p>
+          
+          <strong>Calzado adecuado</strong>
+          <p>El calzado adecuado proporciona protección y minimiza el riesgo de lesiones. El calzado inadecuado puede dañar el terreno de juego. Por 
+            ejemplo, si se utiliza calzado con suelas duras o con clavos en una superficie que no está diseñada para ello, se pueden generar 
+            desgastes, arañazos o daños en la superficie de juego.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <strong>Material deportivo</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body focuseable">
+          <strong>Balones</strong>
+          <p>ontamos con balones de diferentes tamaños y tipos para diferentes deportes, como baloncesto, fútbol, voleibol, balonmano, tenis, entre 
+            otros. Estos balones están diseñados para brindar un buen rendimiento y durabilidad.</p>
+          <strong>Material de entrenamiento</strong>
+          <p>Ofrecemos equipos y accesorios de entrenamiento, como conos, colchonetas, pesas, cuerdas de saltar, barras, mancuernas y mucho más. Estos 
+            materiales están destinados a mejorar el rendimiento y la condición física durante las actividades deportivas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto de información de actividad aquafitness -->
+  <p class="h2 mb-3 mt-5 focuseable">Actividades extra en el Polideportivo</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-5 my-3 card-group w-50 mx-auto">
+        <div class="card bg-light">
+          <img src="../assets/img/badminton.jpg" class="card-img-top" alt="Imagen clases de Bádminton">
+          <div class="card-body">
+            <h5 class="card-title">Bádminton</h5>
+            <p class="card-text">Contamos con redes de bádminton de alta calidad y dimensiones estándar, adecuadas para la práctica de este deporte.
+              Nuestras redes de bádminton son duraderas y están diseñadas para proporcionar una tensión adecuada, asegurando un juego justo y preciso.
+              Además de las redes, también disponemos de postes de bádminton ajustables para fijar las redes a la altura reglamentaria.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5 my-3 w-50 mx-auto">
+        <div class="card bg-light">
+          <img src="../assets/img/voleibol.jpg" class="card-img-top" alt="Imagen clases de Voleibol">
+          <div class="card-body">
+            <h5 class="card-title">Voleibol</h5>
+            <p class="card-text">Ofrecemos redes de voleibol profesionales que cumplen con las regulaciones y dimensiones establecidas para este 
+              deporte. Nuestras redes de voleibol están fabricadas con materiales duraderos y resistentes para garantizar la estabilidad y el 
+              rendimiento durante el juego. Además de las redes, proporcionamos postes de voleibol ajustables que permiten fijar las redes a la altura
+               reglamentaria para diferentes categorías y niveles de juego.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Ubicación -->
+    <div class="card bg-light mt-3 mb-5">
+      <div class="container">
+        <h2 class="mb-5 focuseable">Ubicación de las canchas</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <!-- URL de Google Maps Embed API -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.237877236263!2d-16.32359104547563!3d28.47154124846681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cda217457613%3A0xa3e2be1d5222cb97!2sCiudad%20Deportiva%20Javier%20Perez!5e0!3m2!1ses!2ses!4v1687264664654!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-2 focuseable">Complejo deportivo QuickFit</h4>
+            <p class="focuseable">Cam. la Feria, 9B, 38296 La Laguna, Santa Cruz de Tenerife</p>
+            <p class="mb-5 focuseable">Las canchas se encuentran ubicadas junto al pabellón deportivo y la piscina, se trata de un complejo deportivo</p>
+            <a class="btn btn-primary text-center ms-3 link focuseable" id="EnlaceGoogleMaps" aria-label="Ir a dirección en google maps" href="https://goo.gl/maps/ygV3Q239e1Fjeyh36">Enlace a dirección en Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="subirArribaContainer">
+    <button class="btn btn-secondary btn-lg" id="subirArriba" onclick="scrollToTop()" aria-label="Navegar hacia arriba">Subir Arriba</button>
+    <button type="button" class="btn btn-close" id="cerrarSubirArriba" onclick="closeButton()" aria-label="Cerrar navegación hacia arriba"></button>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+  <p class="focuseable" id="copyright">&copy; 2023 Polideportivo QuickFit. Todos los derechos reservados.</p>
+  <div class="col">
+    <a class="btn btn-primary text-center mt-3" id="footer-link-accesibilidad" href="../views/accesibilidad.html">Accesibilidad</a>
+    <a class="btn btn-primary text-center ms-3 mt-3" id="footer-link-mapaweb" href="../views/mapaweb.html">Mapa web</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/focuseable.js"></script>
+<script src="../js/scrollUp.js"></script>
+</body>
+</html>
